@@ -3,10 +3,10 @@ Test django management test commands
 """
 
 from unittest.mock import patch
-# This error is returned when postgres didn't start and isn't ready to accept new connections
+# This error is returned when postgres didn't start and isn't ready to accept new connections # noqa: E501
 from psycopg2 import OperationalError as Psycopg2Error
 from django.core.management import call_command
-# This error is returned when postgres has already started but hasn't setup db we want to use
+# This error is returned when postgres has already started but hasn't setup db we want to use # noqa: E501
 from django.db.utils import OperationalError
 from django.test import SimpleTestCase
 
